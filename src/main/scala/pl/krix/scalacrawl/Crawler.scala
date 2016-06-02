@@ -14,7 +14,7 @@ object Crawler {
     }
   }
 
-  def crawl(URL: String, visited: Set[String], interval: Int): Set[String] = {    // crawling method
+  def crawl(URL: String, visited: Set[String], interval: Int) {    // crawling method
     Thread.sleep(interval)
     val links = Jsoup.connect(URL)                             // connect
       .get()                                                   // get content
@@ -29,7 +29,6 @@ object Crawler {
           crawl(link, visited + URL, interval)                 // crawl inside link
         }
       }
-    visited                                                    // return visited link
   }
 
   def printHelp() = {
