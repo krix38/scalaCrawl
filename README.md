@@ -5,7 +5,7 @@ Simple scala crawler example
 
 ## Necessary tools
 
-Java and JDK (tested on 1.8), sbt
+Scala and JDK (tested on 1.8), sbt
 
 ## Running
 
